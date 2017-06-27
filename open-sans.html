@@ -1,0 +1,44 @@
+<link rel="import" href="../polymer/polymer.html">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<!--
+`open-sans`
+
+
+@demo demo/index.html
+-->
+
+<dom-module id="open-sans">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #6D6E71;
+      }
+
+      p { 
+        font-family: 'Open Sans', sans-serif;
+      }
+    </style>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'open-sans',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'open-sans',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
